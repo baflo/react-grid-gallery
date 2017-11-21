@@ -152,14 +152,15 @@ class Image extends Component {
                 <div className="tile-bottom-bar"
             key={"tile-bottom-bar-"+this.props.index}
             style={{
-                padding: "2px",
+                margin: "2px 0 2px 0",
                 pointerEvents: "none",
                 position: "absolute",
                 minHeight: "0px",
                 maxHeight: "160px",
                 width: "100%",
                 bottom: "0px",
-                overflow: "hidden"
+                overflow: "hidden",
+                textOverflow: "clip"
             }}>
                 {tags}
             </div>
